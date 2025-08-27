@@ -1,61 +1,60 @@
-/* Un bouton classique. */
-.btn {
-  width: 200px;
-  padding: 15px;
-  border: none;
-  background: #48d1cc;
-  color: #242424;
+/* 
+Correction!
+
+Barre 1: Supprimer le code CSS inline: votre barre de navigation redeviendra blanche, le CSS appliqué sera celui de nav défini plus bas.
+
+Barre 2: Pourquoi le fond est-il bleu alors que les deux sélecteurs sont bien déclarés ?
+Votre navigateur applique le CSS par ordre de priorité. La spécificité d'un ID est plus forte qu'une classe. Ici c'est #nav qui l'emporte.
+
+Barre 3: Pour avoir un fond vert, appliquez #nav.navbar.
+
+*/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
 }
 
-/* Un bouton classique mais avec les angles ronds. */
-.btn-round {
-  border-radius: 30px;
+.navigation {
+  background-color: red;
 }
 
-/* Un bouton classique mais plus large. */
-.btn-wide {
-  width: 400px;
+#nav {
+  background-color: blue;
 }
 
-/* Un bouton classique mais avec une couleur de fond orange. */
-.btn-orange {
-  background-color: #e67e22;
+.navbar {
+  background-color: yellow;
 }
 
-/* Fin de l'exercice! */
+#nav.navbar {
+  background-color: green;
+}
 
-/* Le code suivant ne fait pas parti de l'exercice. */
+/* 
+Fin de l'exercice
+Le code suivant ne fait pas parti de l'exercice. 
+*/
 body {
   font-family: "Manrope", sans-serif;
   font-size: 1em;
   background-color: #1f2039;
 }
 
-.buttons-exercise {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 50px;
+header {
+  background-color: white;
+  padding: 20px 50px;
+  margin-bottom: 30px;
 }
 
-h2 {
-  color: white;
-  text-align: center;
-}
-
-.wide {
-  padding: 15px;
-  border: none;
-  background: #48d1cc;
+a {
   color: #242424;
-  width: 400px;
+  text-decoration: none;
 }
 
-.orange-round {
-  padding: 15px;
-  border: none;
-  border-radius: 30px;
-  width: 200px;
-  background: #e67e22;
-  color: #242424;
+nav a {
+  margin-left: 30px;
 }
