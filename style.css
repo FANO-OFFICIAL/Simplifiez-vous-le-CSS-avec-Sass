@@ -1,61 +1,17 @@
-/* Ceci est votre bloc */
-.intro {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  align-items: flex-start;
-  margin: auto;
-  padding: 80px;
-}
-
-/* Voici vos éléments */
-.intro__title {
-  margin-bottom: 15px;
-  font-size: 3.5em;
-  color: #a5b4fc;
-  font-family: "Montserrat", sans-serif;
-}
-
-.intro__image {
-  padding-left: 80px;
-}
-
-.intro__content {
-  font-size: 1.1em;
-  color: #f9f8ff;
-}
-
-/* Voici vos modificateurs */
-
-.intro__content--purple {
-  color: #a5b4fc;
-  font-style: normal;
-}
-
-/* 
-Le code suivant ne fait pas parti de l'exercice.
-Code de la barre de navigation.
-Le code suivant reprend celui crée pendant le cours 
-*/
-
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-
-.navbar__link {
+.navbar .navbar__link {
   margin-left: 30px;
   color: #242424;
   text-decoration: none;
 }
-
-.navbar__link--purple {
+.navbar .navbar__link--purple {
   color: #a5b4fc;
 }
-
-/* Hors exercice */
 
 body {
   font-family: "Manrope", sans-serif;
@@ -66,4 +22,4 @@ body {
 header {
   background-color: white;
   padding: 20px 50px;
-}
+}/*# sourceMappingURL=style.css.map */

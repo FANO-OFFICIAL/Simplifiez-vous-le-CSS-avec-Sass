@@ -1,0 +1,32 @@
+// La syntaxe Scss est très proche de la syntaxe CSS. Pour écrire en SCSS il vous suffit d'imbriquer les éléments comme vous le feriez en HTML.
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  // On imbrique les éléments comme en HTML.
+  .navbar__link {
+    margin-left: 30px;
+    color: #242424;
+    text-decoration: none;
+  }
+
+  .navbar__link--purple {
+    color: #a5b4fc;
+  }
+}
+
+// Le code suivant ne fait pas parti de l'exercice. Mais vous pouvez observer que ce code CSS classique est quand même exécuté. Vous pouvez écrire en CSS dans un fichier SCSS sans soucis.
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  background-color: #1f2039;
+}
+
+header {
+  background-color: white;
+  padding: 20px 50px;
+}
