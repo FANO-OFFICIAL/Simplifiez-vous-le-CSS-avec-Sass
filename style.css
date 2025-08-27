@@ -1,0 +1,61 @@
+/* Un bouton classique. */
+.btn {
+  width: 200px;
+  padding: 15px;
+  border: none;
+  background: #48d1cc;
+  color: #242424;
+}
+
+/* Un bouton classique mais avec les angles ronds. */
+.btn-round {
+  border-radius: 30px;
+}
+
+/* Un bouton classique mais plus large. */
+.btn-wide {
+  width: 400px;
+}
+
+/* Un bouton classique mais avec une couleur de fond orange. */
+.btn-orange {
+  background-color: #e67e22;
+}
+
+/* Fin de l'exercice! */
+
+/* Le code suivant ne fait pas parti de l'exercice. */
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  background-color: #1f2039;
+}
+
+.buttons-exercise {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.wide {
+  padding: 15px;
+  border: none;
+  background: #48d1cc;
+  color: #242424;
+  width: 400px;
+}
+
+.orange-round {
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  width: 200px;
+  background: #e67e22;
+  color: #242424;
+}
