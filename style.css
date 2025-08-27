@@ -1,43 +1,62 @@
+/* Ceci est votre bloc */
+.intro {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: flex-start;
+  margin: auto;
+  padding: 80px;
+}
+
+/* Voici vos éléments */
+.intro__title {
+  margin-bottom: 15px;
+  font-size: 3.5em;
+  color: #a5b4fc;
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro__image {
+  padding-left: 80px;
+}
+
+.intro__content {
+  font-size: 1.1em;
+  color: #f9f8ff;
+}
+
+/* Voici vos modificateurs */
+
+.intro__content--purple {
+  color: #a5b4fc;
+  font-style: normal;
+}
+
 /* 
-Correction!
-
-Barre 1: Supprimer le code CSS inline: votre barre de navigation redeviendra blanche, le CSS appliqué sera celui de nav défini plus bas.
-
-Barre 2: Pourquoi le fond est-il bleu alors que les deux sélecteurs sont bien déclarés ?
-Votre navigateur applique le CSS par ordre de priorité. La spécificité d'un ID est plus forte qu'une classe. Ici c'est #nav qui l'emporte.
-
-Barre 3: Pour avoir un fond vert, appliquez #nav.navbar.
-
+Le code suivant ne fait pas parti de l'exercice.
+Code de la barre de navigation.
+Le code suivant reprend celui crée pendant le cours 
 */
 
-nav {
+.navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
 }
 
-.navigation {
-  background-color: red;
+.navbar__link {
+  margin-left: 30px;
+  color: #242424;
+  text-decoration: none;
 }
 
-#nav {
-  background-color: blue;
+.navbar__link--purple {
+  color: #a5b4fc;
 }
 
-.navbar {
-  background-color: yellow;
-}
+/* Hors exercice */
 
-#nav.navbar {
-  background-color: green;
-}
-
-/* 
-Fin de l'exercice
-Le code suivant ne fait pas parti de l'exercice. 
-*/
 body {
   font-family: "Manrope", sans-serif;
   font-size: 1em;
@@ -47,14 +66,4 @@ body {
 header {
   background-color: white;
   padding: 20px 50px;
-  margin-bottom: 30px;
-}
-
-a {
-  color: #242424;
-  text-decoration: none;
-}
-
-nav a {
-  margin-left: 30px;
 }
